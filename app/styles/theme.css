@@ -1,88 +1,89 @@
 :root {
-  --oui-font-family: 'Manrope', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --oui-font-family: 'Manrope', sans-serif;
   --oui-font-size-base: 16px;
 
-  /* ===== Brand (emerald) ===== */
-  --oui-color-primary: 16 185 129;          /* #10B981 */
-  --oui-color-primary-light: 52 211 153;    /* #34D399 */
-  --oui-color-primary-darken: 5 150 105;    /* #059669 */
+  /* brand: vert (remplace l'ancien violet) */
+  --oui-color-primary: 16 185 129;         /* #10b981 */
+  --oui-color-primary-light: 52 211 153;   /* #34d399 */
+  --oui-color-primary-darken: 5 150 105;   /* #059669 */
   --oui-color-primary-contrast: 255 255 255;
 
-  --oui-color-link: 34 197 94;              /* #22C55E */
-  --oui-color-link-light: 52 211 153;       /* #34D399 */
+  /* liens: vert */
+  --oui-color-link: 34 197 94;             /* #22c55e */
+  --oui-color-link-light: 110 231 183;     /* #6ee7b7 */
 
-  /* ===== Neutrals (light theme) ===== */
-  --oui-color-secondary: 255 255 255;       /* surfaces */
-  --oui-color-tertiary: 248 250 249;        /* #F8FAF9 */
-  --oui-color-quaternary: 241 245 243;      /* #F1F5F3 */
+  /* neutres conservés */
+  --oui-color-secondary: 255 255 255;
+  --oui-color-tertiary: 218 218 218;
+  --oui-color-quaternary: 218 218 218;
 
-  /* ===== Semantic ===== */
-  --oui-color-danger: 225 29 72;            /* #E11D48 */
-  --oui-color-danger-light: 244 114 182;    /* #F472B6 */
-  --oui-color-danger-darken: 190 18 60;     /* #BE123C */
+  /* états (inchangés) */
+  --oui-color-danger: 245 97 139;
+  --oui-color-danger-light: 250 167 188;
+  --oui-color-danger-darken: 237 72 122;
   --oui-color-danger-contrast: 255 255 255;
 
-  --oui-color-success: 16 185 129;          /* #10B981 */
-  --oui-color-success-light: 52 211 153;    /* #34D399 */
-  --oui-color-success-darken: 5 150 105;    /* #059669 */
+  --oui-color-success: 41 233 169;
+  --oui-color-success-light: 101 240 194;
+  --oui-color-success-darken: 0 161 120;
   --oui-color-success-contrast: 255 255 255;
 
-  --oui-color-warning: 245 158 11;          /* #F59E0B */
-  --oui-color-warning-light: 252 211 77;    /* #FCD34D */
-  --oui-color-warning-darken: 217 119 6;    /* #D97706 */
+  --oui-color-warning: 255 209 70;
+  --oui-color-warning-light: 255 229 133;
+  --oui-color-warning-darken: 255 152 0;
   --oui-color-warning-contrast: 255 255 255;
 
-  /* ===== Surfaces ===== */
-  --oui-color-fill: 255 255 255;            /* cards */
-  --oui-color-fill-active: 248 252 250;     /* hover #F8FCFA */
+  /* fonds violets → verts très sombres (si c'était noir, on laisse noir) */
+  --oui-color-fill: 15 30 23;              /* #0f1e17 */
+  --oui-color-fill-active: 18 36 29;       /* #12241d */
 
-  /* Grayscale ramp (light → dark) */
-  --oui-color-base-1: 248 250 249;          /* #F8FAF9 */
-  --oui-color-base-2: 241 245 243;          /* #F1F5F3 */
-  --oui-color-base-3: 229 236 234;          /* #E5ECEA */
-  --oui-color-base-4: 214 223 220;          /* #D6DFDC */
-  --oui-color-base-5: 196 206 203;          /* #C4CECB */
-  --oui-color-base-6: 173 184 181;          /* #ADB8B5 */
-  --oui-color-base-7: 133 146 143;          /* #85928F */
-  --oui-color-base-8: 94 107 104;           /* #5E6B68 */
-  --oui-color-base-9: 48 61 58;             /* #303D3A */
-  --oui-color-base-10: 11 15 24;            /* #0B0F18 */
+  /* base scale : violets très sombres → verts très sombres */
+  --oui-color-base-1: 76 104 92;           /* #4c685c */
+  --oui-color-base-2: 64 89 78;            /* #40594e */
+  --oui-color-base-3: 52 74 64;            /* #344a40 */
+  --oui-color-base-4: 44 61 54;            /* #2c3d36 */
+  --oui-color-base-5: 38 52 46;            /* #26342e */
+  --oui-color-base-6: 32 43 38;            /* #202b26 */
+  --oui-color-base-7: 26 35 31;            /* #1a231f */
+  --oui-color-base-8: 20 28 25;            /* #141c19 */
+  --oui-color-base-9: 16 22 20;            /* #101614 */
+  --oui-color-base-10: 12 18 16;           /* #0c1210 */
 
-  --oui-color-base-foreground: 11 15 24;    /* text color */
-  --oui-color-line: 11 15 24;               /* used with alpha, e.g. rgba(var(--oui-color-line), .12) */
+  --oui-color-base-foreground: 255 255 255;
+  --oui-color-line: 255 255 255;
 
-  /* Trading */
-  --oui-color-trading-loss: 225 29 72;      /* #E11D48 */
+  --oui-color-trading-loss: 245 97 139;
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 16 185 129;   /* #10B981 */
+  --oui-color-trading-profit: 41 233 169;
   --oui-color-trading-profit-contrast: 255 255 255;
 
-  /* ===== Gradients ===== */
-  --oui-gradient-primary-start: 34 197 94;  /* #22C55E */
-  --oui-gradient-primary-end: 16 185 129;   /* #10B981 */
+  /* dégradés violets → verts */
+  --oui-gradient-primary-start: 6 95 70;   /* #065f46 */
+  --oui-gradient-primary-end: 16 185 129;  /* #10b981 */
 
-  --oui-gradient-secondary-start: 52 211 153; /* #34D399 */
-  --oui-gradient-secondary-end: 34 197 94;    /* #22C55E */
+  --oui-gradient-secondary-start: 5 150 105;  /* #059669 */
+  --oui-gradient-secondary-end: 52 211 153;   /* #34d399 */
 
-  --oui-gradient-success-start: 16 185 129;   /* #10B981 */
-  --oui-gradient-success-end: 52 211 153;     /* #34D399 */
+  --oui-gradient-success-start: 1 83 68;   /* inchangé */
+  --oui-gradient-success-end: 41 223 169;  /* inchangé */
 
-  --oui-gradient-danger-start: 190 18 60;     /* #BE123C */
-  --oui-gradient-danger-end: 225 29 72;       /* #E11D48 */
+  --oui-gradient-danger-start: 153 24 76;  /* inchangé */
+  --oui-gradient-danger-end: 245 97 139;   /* inchangé */
 
-  --oui-gradient-brand-start: 34 197 94;      /* #22C55E */
-  --oui-gradient-brand-end: 52 211 153;       /* #34D399 */
-  --oui-gradient-brand-stop-start: 8%;
-  --oui-gradient-brand-stop-end: 88%;
-  --oui-gradient-brand-angle: 18deg;
+  /* “brand” passe en teinte verte douce */
+  --oui-gradient-brand-start: 231 249 243; /* #e7f9f3 (très clair vert) */
+  --oui-gradient-brand-end: 159 234 201;   /* #9feac9 */
+  --oui-gradient-brand-stop-start: 6.62%;
+  --oui-gradient-brand-stop-end: 86.5%;
+  --oui-gradient-brand-angle: 17.44deg;
 
-  --oui-gradient-warning-start: 217 119 6;    /* #D97706 */
-  --oui-gradient-warning-end: 245 158 11;     /* #F59E0B */
+  --oui-gradient-warning-start: 152 58 8;  /* inchangé */
+  --oui-gradient-warning-end: 255 209 70;  /* inchangé */
 
-  --oui-gradient-neutral-start: 248 250 249;  /* #F8FAF9 */
-  --oui-gradient-neutral-end: 241 245 243;    /* #F1F5F3 */
+  --oui-gradient-neutral-start: 27 29 24;  /* quasi noir: on garde */
+  --oui-gradient-neutral-end: 38 41 46;    /* quasi noir: on garde */
 
-  /* ===== Radius ===== */
+  /* rounded */
   --oui-rounded-sm: 2px;
   --oui-rounded: 4px;
   --oui-rounded-md: 6px;
@@ -91,15 +92,15 @@
   --oui-rounded-2xl: 16px;
   --oui-rounded-full: 9999px;
 
-  /* ===== Spacing (fixed: values were huge) ===== */
-  --oui-spacing-xs: 0.25rem;  /* 4px */
-  --oui-spacing-sm: 0.5rem;   /* 8px */
-  --oui-spacing-md: 1rem;     /* 16px */
-  --oui-spacing-lg: 1.5rem;   /* 24px */
-  --oui-spacing-xl: 2rem;     /* 32px */
+  /* spacing (inchangé) */
+  --oui-spacing-xs: 20rem;
+  --oui-spacing-sm: 22.5rem;
+  --oui-spacing-md: 26.25rem;
+  --oui-spacing-lg: 30rem;
+  --oui-spacing-xl: 33.75rem;
 }
 
 html, body {
-  font-family: var(--oui-font-family) !important;
-  font-size: var(--oui-font-size-base) !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 16px !important;
 }
